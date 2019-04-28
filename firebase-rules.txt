@@ -1,0 +1,33 @@
+{
+  "rules": {
+    "users": {
+      ".read": "auth.uid === 'sQQ5cgVjkbUDOPNv3aXSFZRFMLc2'",
+      ".write": "auth.uid === 'sQQ5cgVjkbUDOPNv3aXSFZRFMLc2'",
+        
+      "$uid": {
+        ".read": "$uid === auth.uid || $uid === 'sQQ5cgVjkbUDOPNv3aXSFZRFMLc2'",
+        ".write": "$uid === auth.uid"
+      }
+    },
+    
+    "events": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["dayTimeStamp", "employee", "uid"]
+    },
+      
+    "isAdmin": {
+      ".read": "auth.uid === 'sQQ5cgVjkbUDOPNv3aXSFZRFMLc2'"
+    },
+      
+    "shop": {
+      ".read": true,
+      ".write": "auth.uid === 'sQQ5cgVjkbUDOPNv3aXSFZRFMLc2'",
+      "holidays": {
+        ".indexOn": ["endDate"]
+      }
+      
+    }
+    
+  }
+}

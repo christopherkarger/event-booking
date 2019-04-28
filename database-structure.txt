@@ -1,0 +1,34 @@
+# Firebase Select
+this.$firebase.database()
+.ref('shop/services')
+.orderByChild('name')
+.equalTo('Frauenschnitt').once('value', (snapshot) => {
+  console.log(snapshot.val());
+});
+
+1. SHOP
+  - employees
+    - [{ days, name, events}]
+  - openingTimes
+    - [{name,times}]
+  - services
+    - [{name,price,time}]
+
+
+2. USER
+  - userID
+    [{email,firstTime,provider,username}]
+
+3. EVENTS
+  - 
+    {
+      daystimestamp [
+        {
+          uid,
+          timestamp,
+          employee,
+          service
+        }
+      ] 
+    }
+  
