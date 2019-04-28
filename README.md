@@ -8,7 +8,7 @@ Feel free to modify the code or use it for commercial purpose.
 Cya
 Happy Coding
 
-#Screenshots App
+## Screenshots App
 ![Alt text](screens/app/1.png?raw=true "Screenshot 1")
 ![Alt text](screens/app/2.png?raw=true "Screenshot 2")
 ![Alt text](screens/app/3.png?raw=true "Screenshot 3")
@@ -17,7 +17,7 @@ Happy Coding
 ![Alt text](screens/app/6.png?raw=true "Screenshot 6")
 
 
-#Screenshots Admin
+## Screenshots Admin
 ![Alt text](screens/admin/1.png?raw=true "Screenshot 1")
 ![Alt text](screens/admin/2.png?raw=true "Screenshot 2")
 ![Alt text](screens/admin/3.png?raw=true "Screenshot 3")
@@ -25,7 +25,8 @@ Happy Coding
 ![Alt text](screens/admin/5.png?raw=true "Screenshot 5")
 ![Alt text](screens/admin/6.png?raw=true "Screenshot 6")
 
-#firebase rules
+
+## firebase rules
 
 ```json
 {
